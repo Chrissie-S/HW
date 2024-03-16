@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Simple Form Controls</title>
+</head>
+<body>
+	<h1><b>Регистрация</b></h1>
+    <p>Лични данни</p>
+	<form action="http://127.0.0.1:5502/cgi-bin/registration.py?userName=Iva&userSurName=Popova&gender=f&comment=Your+site+is+awesome%21" method="post">
+        <label for="username">Име: </label>
+        <input type="text" id="username" name="username" placeholder="малко име, на латиница">
+        <br>
+        <label for="username">Име: </label>
+        <input type="text" name="username" placeholder="фамилия, на латиница">
+        <br>
+        <div>Пол:
+			<label>мъж: <input type="radio" name="Gender" value="male"></label>
+            <label>жена: <input type="radio" name="Gender" value="female"></label>
+        </div>
+		<p>Коментар:</p>
+        <textarea cols="27" rows="5" placeholder="напишете ни нещо"></textarea><br>
+		<button type="submit">Изпрати</button>
+	</form>
+</body>
+</html>
