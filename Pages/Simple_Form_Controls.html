@@ -7,23 +7,27 @@
 </head>
 <body>
 	<h1><b>Регистрация</b></h1>
+    <form action="http://127.0.0.1:5502/cgi-bin/registration.py" method="get">
     <fieldset style="width: 350px;">
         <legend>Лични данни</legend>
-	<form action="http://127.0.0.1:5502/cgi-bin/registration.py" method="get">
-        <label for="username">Име: </label>
-        <input type="text" id="username" name="username" placeholder="малко име, на латиница">
+        <label for="userName">Име: </label>
+        <input type="text" id="userName" name="userName" placeholder="малко име, на латиница">
         <br>
-        <label for="username">Име: </label>
-        <input type="text" name="username" placeholder="фамилия, на латиница">
+        <label for="userSurName">Име: </label>
+        <input type="text" id="userSurName" name="userSurName" placeholder="фамилия, на латиница">
         <br>
-        <div>Пол:
-			<label>мъж: <input type="radio" name="Gender" value="male"></label>
-            <label>жена: <input type="radio" name="Gender" value="female"></label>
-        </div>
-    </form>
+        <div>
+            <label>Пол:</label>
+			<label for="m">мъж: </label>
+            <input type="radio" id="m" name="gender" value="m">
+			<label for="f">жена: </label>
+            <input type="radio" id="f" name="gender" value="f">
+		</div>
     </fieldset>
-    <label for="comment">Коментар:</label><br>
+    <label for="comment">Коментар:</label>
+    <br>
         <textarea id="comment" name="comment" cols="25" rows="3" placeholder="напишете ни нещо"></textarea><br>
-		<button type="submit">Изпрати</button>
+		<input type="submit" value="Изпрати">
+    </form>
 </body>
 </html>
