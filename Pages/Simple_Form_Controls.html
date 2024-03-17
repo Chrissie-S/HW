@@ -7,8 +7,9 @@
 </head>
 <body>
 	<h1><b>Регистрация</b></h1>
-    <p>Лични данни</p>
-	<form action="http://127.0.0.1:5502/cgi-bin/registration.py?userName=Iva&userSurName=Popova&gender=f&comment=Your+site+is+awesome%21" method="post">
+    <fieldset style="width: 350px;">
+        <legend>Лични данни</legend>
+	<form action="http://127.0.0.1:5502/cgi-bin/registration.py" method="get">
         <label for="username">Име: </label>
         <input type="text" id="username" name="username" placeholder="малко име, на латиница">
         <br>
@@ -19,9 +20,10 @@
 			<label>мъж: <input type="radio" name="Gender" value="male"></label>
             <label>жена: <input type="radio" name="Gender" value="female"></label>
         </div>
-		<p>Коментар:</p>
-        <textarea cols="27" rows="5" placeholder="напишете ни нещо"></textarea><br>
+    </form>
+    </fieldset>
+    <label for="comment">Коментар:</label><br>
+        <textarea id="comment" name="comment" cols="25" rows="3" placeholder="напишете ни нещо"></textarea><br>
 		<button type="submit">Изпрати</button>
-	</form>
 </body>
 </html>
