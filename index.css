@@ -29,6 +29,13 @@ a:hover {
     color: burlywood;
     text-decoration: underline;
     }
+#project > h3 a {
+    text-align: left;
+    color: white;
+    font-variant: small-caps;
+    letter-spacing: 1px;
+    text-decoration: none;
+    }
 .column {
     float: left; 
     width: 17%; 
