@@ -10,12 +10,6 @@ body {
     letter-spacing: 1px;
     line-height: 0.6em;
     }
-#name > h3 {
-    text-align: left;
-    color: white;
-    font-variant: small-caps;
-    letter-spacing: 1px;
-    }
 ol, li a {
     font-size: 17px;    
     line-height: 2.0;
@@ -28,13 +22,6 @@ ol, li a {
 a:hover {
     color: burlywood;
     text-decoration: underline;
-    }
-#project > h3 a {
-    text-align: left;
-    color: white;
-    font-variant: small-caps;
-    letter-spacing: 1px;
-    text-decoration: none;
     }
 .column {
     float: left; 
@@ -50,4 +37,19 @@ a:hover {
     font-variant: small-caps; 
     padding-left: 12px;
     letter-spacing: 1.5px;
+    }
+    #project a, h3 {
+    color: white;
+    letter-spacing: 1.5px;
+    font-variant: small-caps; 
+    text-decoration: none; 
+    }
+    .project-link {
+    display: flex; 
+    align-items: center; 
+    text-decoration: none; 
+    color: white;
+    }
+    .project-link i {
+    margin-right: 15px;
     }

@@ -1,0 +1,12 @@
+.todoList {
+    list-style-type: none;
+}
+.emoji-smile::before {
+    content: "\1F603";
+}
+.emoji-sad::before {
+    content: "\1F625";
+}
+.emoji-loudly-crying::before {
+    content: "\1F62D";
+}

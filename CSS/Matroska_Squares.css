@@ -1,0 +1,22 @@
+body {
+	margin: 0; padding: 0;
+}
+.container {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	background: darkred;
+}
+.matroska {
+	position: absolute;
+	top: 10%; left: 10%;
+	bottom: 10%; right: 10%;
+	background: darkred;
+	border: 0.2em solid yellow;
+}
+.matroska:hover {
+	background: orange;
+}
+.matroska.small {
+	background: orange;
+}
