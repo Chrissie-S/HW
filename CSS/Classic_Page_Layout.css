@@ -1,26 +1,75 @@
-body{
-    margin: 0;
-    font-size: 20px;
-    background-color: #FDAFB1;
+*{
+    box-sizing: border-box;
 }
-#header, #footer{
+body {
+    margin: 0;
+    padding: 1em;
+    font-size: 20px;
+    background-color: #ece1ac;
+}
+header, footer {
     height: 10vh;
-    margin: 1em;
+    padding-top: 3vh;
+    font-size: 2em;
     text-align: center;
     color: #FFF;
-    background-color: #98D1C7;
+    background-color: #747da7;
 }
-#aside, #article{
-    margin: 1em ;
+main {
+    margin: 1em 0;
+    height: calc(80vh - 2em - 2em);
 }
-#aside{
+aside, article {
+    float: left;
+    height: 100%;
+    margin: 0;
+}
+aside>div {
+    width: 100%;
+    text-align: center;
+}
+aside {
+    position: relative;
+    font-size: 2em;
     width: 30%;
-    height: 70vh;
-    background-color: #62B7B6;
+    background-color: #273561;
+    color: #FFF;
 }
-#article{
-    background-color: #FA7A7B;
+article {
+    position: relative;
+    width: calc(100% - 30% - 1em);
+    margin-left: 1em;
+    background-color: #948726;
 }
-#img{
-    background-color: #D6D5D5;
+.image {
+    position: absolute;
+    bottom: 1em;
+    left:0; right: 1em;
+    height: 30vh;
+}
+.img {
+    float: left;
+    margin-left:1em;
+    width: calc(33.3% - 1em);
+    height: 80%;
+    background-color: #b9b8b8;
+}
+.text {
+    height: 20%;
+    font-size: 2em;
+    color: #FFF;
+    text-align: center;
+}
+.img>div {
+    font-size: 2em;
+    color: #FFF;
+}
+.center {
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    text-align: center;
+}
+.clearfix {
+    clear: both;
 }

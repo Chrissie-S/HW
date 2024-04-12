@@ -1,0 +1,52 @@
+body {
+      background-image: url("../Images/Ocean-through-window-frame.jpg");
+      background-size: cover;
+      margin: 0;
+    }
+.rings {
+      position: relative;
+      font-size: 3.5vmin;
+      width: 15em;   
+      height: 2.5em; 
+      margin: 0 auto;
+      margin-top: 25vh;
+    }
+.ring {
+      box-sizing: border-box;
+      width: 5em;
+      height: 5em;
+      border-width: 0.4em;
+      border-style: solid;
+      text-align: center;
+      line-height: 4em;
+      vertical-align: middle;
+      border-radius: 100%;
+      opacity: 0.4;
+      font-weight: bold;
+    }
+.Europe {
+      border-color: blue;
+      position: absolute;
+    }
+.Africa {
+      position: absolute;
+      left: 5em;
+      border-color: yellow;
+    }
+.America {
+      position: absolute;
+      left: 10em;
+      border-color: black;
+    }
+.Asia {
+      position: absolute;
+      top: 3em;
+      left: 3em;
+      border-color: green;
+    }
+.Australia {
+      position: absolute;
+      top: 3em;
+      left: 8em;
+      border-color: red;
+    }
