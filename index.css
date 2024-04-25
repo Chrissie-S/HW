@@ -1,33 +1,37 @@
 body {
     background-image: url("./Images/Index/Petals.jpg");
     background-repeat: no-repeat;
-    font-family: 'Trebuchet MS';
-    }
+    font-family: 'Kurale';
+}
 #name > h2 {
     text-align: center;
     color: white;
     font-variant: small-caps;
     letter-spacing: 1px;
     line-height: 0.6em;
-    }
+}
 ol, li a {
-    font-size: 17px;    
+    font-size: 17px; 
+    font-weight: 700;   
     line-height: 2.0;
     color: white;
     font-variant: small-caps;
     letter-spacing: 1.0px;
     padding: 5px;
     text-decoration: none;
-    }
+}
 a:hover {
     color: burlywood;
     text-decoration: underline;
-    }
-.column {
-    float: left; 
-    width: 20%; 
+}
+#container {
     padding: 15px;
-    }
+    display: flex;
+}
+.list {
+    margin-right: 60px;
+    justify-content: space-between;
+}
 .icon a, h1 {
     display: flex;
     justify-content: center; 
@@ -35,21 +39,21 @@ a:hover {
     text-decoration: none;
     color: white; 
     font-variant: small-caps; 
-    padding-left: 12px;
+    padding-left: 15px;
     letter-spacing: 1.5px;
-    }
-    #project a, h3 {
+}
+#project a, h3 {
     color: white;
     letter-spacing: 1.5px;
     font-variant: small-caps; 
     text-decoration: none; 
-    }
-    .project-link {
+}
+.project-link {
     display: flex; 
     align-items: center; 
     text-decoration: none; 
     color: white;
-    }
-    .project-link i {
+}
+.project-link i {
     margin-right: 15px;
-    }
+}
