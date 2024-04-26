@@ -8,17 +8,13 @@ function checkUserAge() {
   let userAge = 2022 - userBirthYear;
   let x = 18 - userAge;
   if (userAge >= 18) {
-    console.log(`Добре дошли, ${userName}!`);
+    writeToOutput(`Добре дошли, ${userName}!`);
   } else if (userAge >= 12 && userAge < 18) {
-    console.log(
-      `${userName}, ще имате достъп само до определена функционалност от този сайт.`
-    );
+    writeToOutput(`${userName}, ще имате достъп само до определена функционалност от този сайт.`);
   } else {
-    console.log(`Съжaлявам ${userName}, отбий се тук след ${x} години!`);
+    writeToOutput(`Съжалявам ${userName}, отбий се тук след ${x} години!`);
   }
 }
-
-// ***
 writeToOutput("Попълнете формата и кликнете върху бутона!");
 function getInputsValues() {
   var form = document.getElementsByClassName("test")[0];
@@ -28,12 +24,12 @@ function getInputsValues() {
     var inputNode = inputs[i];
     var inputNodeValue = inputNode.value;
     if (inputNode.type === "date") {
-      var dateMatch = inputNodeValue.match(/^(\d{4})-(\d{2})-(\d{2})$/); //YYYY-MM-DD
+      var dateMatch = inputNodeValue.match(/^(\d{4})-(\d{2})-(\d{2})$/);
       if (dateMatch) {
         inputNodeValue = {
           year: dateMatch[1],
           month: dateMatch[2],
-          day: dateMatch[3],
+          day: dateMatch[3]
         };
       }
     } else {
