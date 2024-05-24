@@ -31,12 +31,10 @@ a:hover {
     margin-bottom: 5px;
 }
 #container {
-    padding: 15px;
     display: flex;
-}
-.list {
-    margin-right: 70px;
     justify-content: space-between;
+    padding-left: 15px;
+    width: 80svw;
 }
 .icon a, h1 {
     display: flex;
